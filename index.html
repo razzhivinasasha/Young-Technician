@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> <!--ДОБАВИТЬ ОПИСАНИЕ ДЛЯ ПОИСКОВИКОВ, ИКОНКУ, ОФОРМИТЬ ВИД ССЫЛКИ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Юный техник, магазин электроники, купить смартфон, купить планшет, ноутбуки, гаджеты, техника, интернет-магазин смартфонов">
+    <meta name="description" content="Интернет-магазин «Юный техник» — большой выбор современных смартфонов, планшетов и ноутбуков по доступным ценам. Найдите свой идеальный гаджет у нас!">
+    <title>Юный Техник</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<body>
+    <header>
+        <h1 class="logo">Юный Техник</h1>
+        <nav>
+            <ul>
+                <li><a href="">Товары</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Помощь</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="offers">Посмотреть предложения</button>
+    </header>
+
+    <main>
+        <img src="img/основное фото.png" alt="фото техники" width="1031">
+
+        <section>
+            <h2>Лучшие товары от Юного Техника</h2>
+            <p>Широкий выбор современной техники</p>
+
+            <div class="product">
+                <article>
+                    <img src="img/img1.png" alt="Смартфон XY-300">
+                    <h3>Смартфон XY-300</h3>
+                    <p>Безграничные возможности в ваших руках</p>
+                    <p><span>18 990</span><s>23 990</s></p>
+                    <button class="order">Заказать</button>
+                </article>
+
+                <article>
+                    <img src="img/img2.png" alt="Планшет Atra Pro">
+                    <h3>Планшет Atra Pro</h3>
+                    <p>Настоящее мощное устройство для работы и развлечений</p>
+                    <p><span>18 990</span><s>39 990</s></p>
+                    <button class="order">Заказать</button>
+                </article>
+
+                <article>
+                    <img src="img/img3.png" alt="Ноутбук">
+                    <h3>Идеальный ноутбук</h3>
+                    <p>Мощность и стиль в каждой детали</p>
+                    <p><span>98 990</span><s>73 990</s></p>
+                    <button class="order">Заказать</button>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Отзывы покупателей</h2>
+
+            <img src="img/img4.png" alt="фото покупателя" width="80" height="80">
+            <p>Александра Лаптева</p>
+            <p>Секретарь</p>
+            <button class="left">&lt</button>
+            <p>"Я просто в восторге от своего нового телефона XY-300! Этот аппарат сочетает в себе стиль, функциональность и высокотехнологичные возможности, что делает его идеальным спутником.
+Дизайн телефона просто завораживает: тонкий и легкий корпус, изогнутый экран и стильная цветовая гамма – все это создает великолепный внешний вид. Аккумулятор держит заряд на протяжении всего дня, что особенно важно для активной девушки, всегда в движении."</p>
+            <button class="right">&gt</button>
+            <div></div><!--Кнопка перелистывания-->
+        </section>
+
+        <section>
+            <h2>Остались вопросы?</h2>
+            <p>Мы готовы вам помочь</p>
+
+            <form action="#" method="POST">
+                <label for="username"></lebel>
+                <input type="text" id="username" name="userName" placeholder="Ваше имя" required>
+
+                <label for="email"></lebel>
+                <input type="email" id="email" name="mail" placeholder="Ваш email" required>
+
+                <label for="comment"></lebel>
+                <textarea id="comment" name="feedback" rows="5" cols="40" placeholder="Напишите, какие сложности возникли"></textarea> <!--name — это «имя переменной», которое уйдет на сервер. Без name данные из поля не будут отправлены-->
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Контакты</h2>
+            <p>Мы рады видеть Вас в своем магазине</p>
+
+            <!--Как вставить карту с Яндекс карт: 
+            1. Найдите место: Откройте Яндекс Карты и введите нужный адрес.
+            2. Откройте меню: Нажмите кнопку «Поделиться» (иконка со стрелочкой или тремя точками в карточке организации/адреса).
+            3. Скопируйте код: Перейдите на вкладку «Виджет с картой» или «Код для вставки». Выберите подходящий размер и скопируйте HTML-код (он начинается с <iframe...).
+            4. Добавьте на сайт: Вставьте этот код в HTML-файл вашего учебного проекта в то место, где должна отображаться карта.-->
+            <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.326562%2C59.934474&mode=poi&poi%5Bpoint%5D=30.324428%2C59.934221&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1465212196&z=16.8"  title="Казанский собор" width="100%" height="373.5" frameborder="0" allowfullscreen="true" style="position:relative;">
+            </iframe><!--всегда добавляйте title!-->
+
+            <div>
+                <h3>Контакты</h3>
+                <p><a href="tel:#">+X-XXX-XXX-XX-XX</a><br>
+                <a href="mailto:info@luxtehnika.ru">info@luxtehnika.ru</a></p>
+                <p>г.Москваб метро "Китай город"<br>
+                улюЯузскаяб дом 15/11</p>
+            </div>
+        </section>    
+    
+    </main>
+    <footer>
+        <h2 class="logo">Юный Техник</h2>
+
+        <nav>
+            <ul>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Помощь</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="tel:+7 (880) 555-55-55">+7 (880) 555-55-55</a>
+            <a href="mailto:youngtechnic@yt.ru">youngtechnic@yt.ru</a>
+        </div>
+
+        <div>
+            <img src="img/Telegram.svg">
+            <img src="img/At sign.svg">
+        </div>
+    </footer>   
+    <script src="main.js" defer></script>
+</body>
+</html>
