@@ -1,0 +1,70 @@
+html {
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*плавный переход по старнице*/
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Jost", sans-serif;
+    --black-color: #000;
+    --blue-color: #3e68ff;
+    --bottom-background: #8c9fe3;
+    --bottom-text-color: #fff;
+}
+
+body {
+    width: 100%;
+    min-width: 1440px;
+    height: auto;
+    font-family: var(--font-family);
+    font-weight: 300;
+    color: var(--black-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 31px 124px 0 102px;
+}
+
+h1, h1 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none; /*подчеркивание*/
+    color: var(--black-color);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
+header>nav ul {
+    display: flex;
+}
+
+li {
+    padding: 0 38px;
+    list-style-type: none;
+}
+
+.offers {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bottom-background);
+    color: var(--bottom-text-color);
+    font-size: 23px; /* fsz23 */
+    text-align: center;
+    font-weight: 400;
+    padding: 8px 9px;
+}
