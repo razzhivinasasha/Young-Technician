@@ -29,14 +29,19 @@ body {
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* сделала более гибкий header, для визуального понимания использовала F12*/
     align-items: center;
-    margin: 31px 124px 0 102px;
+    margin: 31px auto 0;
 }
 
-h1, h1 {
+h1, h2 {
     font-weight: 600;
     font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 7px;
 }
 
 a {
@@ -54,7 +59,7 @@ header>nav ul {
 }
 
 li {
-    padding: 0 38px;
+    padding-left: 38px;
     list-style-type: none;
 }
 
@@ -68,3 +73,69 @@ li {
     font-weight: 400;
     padding: 8px 9px;
 }
+.offers:hover {
+    cursor: pointer;
+}
+
+.photo-1 {
+    display: block; /* img - это строчный элемент, нам надо его приобразовать в блочный*/
+    width: 100%;
+    max-width: 1031px;
+    height: auto;
+    margin: 96px auto;
+}
+
+.product>p,
+.form>p {
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* ARTICLE */
+.product-arrticle {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 49px 0 96px 0;
+}
+article {
+    border: 1px solid rgba(118, 118, 118, 0.5);
+    border-radius: 50px;
+    width: 360px;
+    height: 400px;
+    text-align: center;
+    padding: 30px 36px 23px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+article>p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #636363;
+    margin-bottom: 10px;
+}
+article>p+p {
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+span {
+    color: var(--blue-color);
+    padding-right: 19px;
+}
+.order {
+    width: 210px;
+    height: 35px;
+    background-color: var(--bottom-background);
+    color: var(--bottom-text-color);
+    font-weight: 400;
+    font-size: 21px;
+    border-radius: 10px;
+    border: none;
+}
+.order:hover {
+    cursor: pointer;
+}
+
