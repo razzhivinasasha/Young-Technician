@@ -16,10 +16,10 @@
         <h1 class="logo">Юный Техник</h1>
         <nav>
             <ul>
-                <li><a href="">Товары</a></li>
-                <li><a href="">Отзывы</a></li>
-                <li><a href="">Помощь</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#help">Помощь</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
         <button class="offers">Посмотреть предложения</button>
@@ -28,7 +28,7 @@
     <main>
         <img src="img/основное фото.png" alt="фото техники" class="photo-1">
 
-        <section class="product">
+        <section class="product" id="products">
             <h2>Лучшие товары от Юного Техника</h2>
             <p>Широкий выбор современной техники</p>
 
@@ -61,7 +61,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="reviews">
             <h2>Отзывы покупателей</h2>
 
             <img src="img/img4.png" alt="фото покупателя" width="80" height="80">
@@ -78,25 +78,23 @@
             </div>
         </section>
 
-        <section class="form">
+        <section class="form" id="help">
             <h2>Остались вопросы?</h2>
             <p>Мы готовы вам помочь</p>
 
             <form action="#" method="POST">
-                <label for="username"></lebel>
                 <input type="text" id="username" name="userName" placeholder="Ваше имя" required>
 
-                <label for="email"></lebel>
                 <input type="email" id="email" name="mail" placeholder="Ваш email" required>
 
-                <label for="comment"></lebel>
                 <textarea id="comment" name="feedback" rows="5" cols="40" placeholder="Напишите, какие сложности возникли"></textarea> <!--name — это «имя переменной», которое уйдет на сервер. Без name данные из поля не будут отправлены-->
 
                 <button type="submit">Отправить</button>
             </form>
         </section>
 
-        <section>
+        <!--В макете карта и контакты, это объединенная картинка, нет четких параметров для элемента с контактами-->
+        <section class="info" id="contact">
             <h2>Контакты</h2>
             <p>Мы рады видеть Вас в своем магазине</p>
 
@@ -105,35 +103,35 @@
             2. Откройте меню: Нажмите кнопку «Поделиться» (иконка со стрелочкой или тремя точками в карточке организации/адреса).
             3. Скопируйте код: Перейдите на вкладку «Виджет с картой» или «Код для вставки». Выберите подходящий размер и скопируйте HTML-код (он начинается с <iframe...).
             4. Добавьте на сайт: Вставьте этот код в HTML-файл вашего учебного проекта в то место, где должна отображаться карта.-->
-            <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.326562%2C59.934474&mode=poi&poi%5Bpoint%5D=30.324428%2C59.934221&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1465212196&z=16.8"  title="Казанский собор" width="100%" height="373.5" frameborder="0" allowfullscreen="true" style="position:relative;">
-            </iframe><!--всегда добавляйте title!-->
+            <div class="map-contact">
+                <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.326562%2C59.934474&mode=poi&poi%5Bpoint%5D=30.324428%2C59.934221&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1465212196&z=16.8"  title="Казанский собор" width="100%" height="373.5" frameborder="0" allowfullscreen="true">
+                </iframe><!--всегда добавляйте title!-->
 
-            <div>
-                <h3>Контакты</h3>
-                <p><a href="tel:#">+X-XXX-XXX-XX-XX</a><br>
-                <a href="mailto:info@luxtehnika.ru">info@luxtehnika.ru</a></p>
-                <p>г.Москваб метро "Китай город"<br>
-                улюЯузскаяб дом 15/11</p>
+                <div class="contact"> 
+                    <h3>Контакты</h3>
+                    <p><a href="tel:#">+X-XXX-XXX-XX-XX</a><br>
+                    <a href="mailto:info@luxtehnika.ru">info@luxtehnika.    ru</a></p>
+                    <p>г.Москваб метро "Китай город"<br>
+                    улюЯузскаяб дом 15/11</p>
+                </div>
             </div>
         </section>    
-    
     </main>
     <footer>
         <h2 class="logo">Юный Техник</h2>
 
         <nav>
             <ul>
-                <li><a href="">О компании</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Помощь</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#help">Помощь</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
 
-        <div>
-            <a href="tel:+7 (880) 555-55-55">+7 (880) 555-55-55</a>
+        <p><a href="tel:+7 (880) 555-55-55">+7 (880) 555-55-55</a><br>
             <a href="mailto:youngtechnic@yt.ru">youngtechnic@yt.ru</a>
-        </div>
+        </p>
 
         <div>
             <img src="img/Telegram.svg">
