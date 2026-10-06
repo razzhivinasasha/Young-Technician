@@ -1,10 +1,8 @@
 html {
-    width: 100%;
-    box-sizing: border-box;
     scroll-behavior: smooth; /*плавный переход по старнице*/
 }
 *, *::before, *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -18,11 +16,12 @@ html {
 
 body {
     width: 100%;
-    min-width: 1440px;
+    max-width: 1440px;
     height: auto;
     font-family: var(--font-family);
     font-weight: 300;
     color: var(--black-color);
+    margin: 0 auto;
 }
 
 header {
@@ -254,4 +253,226 @@ footer>p a {
 footer>div img {
     width: 100;
     height: 100;
+}
+
+/*Мобилка*/
+@media screen and (max-width: 760px) {
+    body {
+        width: 100%;  
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+    h1, h2, h3, p, a {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    /* ИСПРАВЛЕНО: Сбрасываем огромные десктопные 102px падингов */
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px auto 0;
+        padding: 0 20px; /* Безопасные отступы на мобильном */
+    }
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 25px;
+        margin: 0 20px 15px; /* ИСПРАВЛЕНО: Уменьшили отступы с 50px до 20px */
+        text-align: center;
+    }
+    .product>p,
+    .form>p,
+    .info>p {
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 15px; /* Защита, чтобы текст не лип к краям */
+    } 
+    
+    header>nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем ссылки меню */
+        gap: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0;
+    }
+    .offers {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--bottom-background);
+        color: var(--bottom-text-color);
+        font-size: 16px; 
+        text-align: center;
+        font-weight: 400;
+        margin: 20px auto 0; /* ИСПРАВЛЕНО: Уменьшили верхний маржин со 50px до 20px */
+        padding: 8px 15px;
+    }
+
+    .photo-1 {
+        display: block; 
+        width: 100%;
+        max-width: 100%; /* ИСПРАВЛЕНО: Чтобы картинка не была шире экрана */
+        height: auto;
+        margin: 30px auto;
+    }
+
+    /* ARTICLE */
+    .product-arrticle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 30px;
+        margin: 49px 0 96px;
+    }    
+    article {
+        border: 1px solid rgba(118, 118, 118, 0.5);
+        border-radius: 30px;
+        width: 100%;
+        max-width: 320px; /* ИСПРАВЛЕНО: 320px идеально встанет на экраны 340px-360px */
+        height: auto;
+        padding: 25px 20px; /* ИСПРАВЛЕНО: Слегка уменьшили внутренние отступы */
+    }
+    h3 {
+        font-size: 22px;
+    }
+    article>p,
+    .contact-info>p+a {
+        font-size: 16px;
+    }
+    article>p+p {
+        font-size: 22px;
+        margin-bottom: 7px;
+    }
+    article img {
+        width: 100%;
+        max-width: 288px;
+        height: auto;
+    }
+    .order,
+    form>button {
+        width: 100%;
+        max-width: 210px;
+        font-weight: 300;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    /* ОТЗЫВЫ ПОКУПАТЕЛЕЙ */
+    .comment>p {
+        font-size: 16px;
+        margin: 0; 
+    }
+    .feedback>p+p {
+        font-size: 20px;
+    }
+    /* ИСПРАВЛЕНО: Сбросили десктопные 102px паддингов и выстроили элементы вертикально */
+    .comment {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: justify;
+        margin-top: 16px;
+        padding: 0 20px; 
+    }
+    .comment>button {
+        display: none; 
+    }
+    .scroll-indicator {
+        margin: 20px auto 96px;
+    }
+
+    /* Обратная связь */
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 320px; /* ИСПРАВЛЕНО: Сделали одинаковую максимальную ширину с карточками */
+        height: auto;
+        margin: 20px auto 96px;
+        padding: 20px 20px 30px;
+        gap: 20px;
+    }
+    input,
+    textarea {
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 12px 15px; /* ИСПРАВЛЕНО: Сделали аккуратные отступы внутри полей */
+    }
+
+    /* Контакты */
+    .map-contact {
+        position: static;
+        z-index: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column; /* Элементы внутри пойдут друг за другом */
+    }
+    .contact { 
+        position: static;
+        width: 100%;
+        max-width: 320px; /* ИСПРАВЛЕНО: Сделали блок резиновым вместо жестких 300px */
+        height: auto;
+        border-radius: 0; /* ИСПРАВЛЕНО: Вернули скругление углов для красоты */
+        top: auto;
+        left: auto;
+        transform: none; 
+        z-index: auto;
+        margin: 20px 20px; /* Центрируем под картой */
+        padding: 0px;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 20px 20px;
+        background-color: #9eb1f465;
+    }
+    footer h2 {    
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    footer nav ul {
+        margin: 25px 0 0; /* Слегка уменьшили отступ */
+    }
+    footer nav ul li {    
+        font-weight: 300;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    footer p {
+        margin: 20px 0; /* Слегка уменьшили отступ */
+    }
+    footer>p a {    
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--blue-color);
+        padding: 5px 0 0;
+    }
+    footer div img {
+        margin: 0 0 20px;
+        width: 30%;
+        height: auto;
+    }
 }
