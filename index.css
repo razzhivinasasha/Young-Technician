@@ -372,7 +372,7 @@ footer>div img {
     }
     /* Обратная связь */
     .form {
-        margin: 0 10px;
+        padding: 0 10px;
     }
     form {
         width: 100%;
@@ -388,6 +388,9 @@ footer>div img {
         font-size: 4vw;
         padding: 10px;
     }
+    form button {
+        width: 40%;
+    }
 /* Контакты */
     .map-contact {
         position: static;
@@ -402,7 +405,7 @@ footer>div img {
     }
     iframe {
         width: 100%;
-        height: auto;
+        height: 373.5px;
     }
     .contact { 
         position: static;
@@ -448,6 +451,212 @@ footer>div img {
     }
     footer div img {
         width: 30%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 931.98px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+    
+    h1, h2, h3, p, a {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 6vw;
+        text-align: center;
+        margin: 10px auto 0;
+    }
+    h2 {
+        font-size: 5vw;
+        margin: 40px 20px 20px;
+        text-align: center;
+    }
+    .product>p,
+    .form>p,
+    .info>p {
+        font-size: 25px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 8px;
+        margin: 20px 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .offers {
+        font-size: 22px; /* fsz16 */
+        margin: 0 20px;
+        padding: 10px 15px;
+    }
+    
+    /*MAIN*/
+    .photo-1 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    /* ARTICLE */
+    .product-arrticle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 20px auto;
+        padding:0;
+    }
+    article {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 20px 26px 20px;
+    }
+    h3 {
+        font-size: 4.1vw;
+    }
+    article>p,
+    .contact-info>p+a {
+        font-size: 22px;
+    }
+    article>p+p {
+        font-size: 4.1vw;
+        margin-bottom: 7px;
+    }
+    article img {
+        width: 100%;
+        height: auto;
+    }
+    .order,
+    form button {
+        width: 100%;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    /* ОТЗЫВЫ ПОКУПАТЕЛЕЙ */
+    .feedback>img {
+        margin: 0;
+    }     
+    .feedback>p,
+    .comment>p {
+        font-size: 25px;
+    }
+    .feedback>p+p {
+        font-size: 25px;
+    }
+    .comment {
+        display: inline-block;
+        margin-top: 15px;
+        text-align: justify;
+        padding: 0 30px;
+    }
+    .comment>button {
+        display: none; /*скрыли боковые кнопки*/
+    }
+    .scroll-indicator {
+        margin: 20px 0;
+    }
+    /* Обратная связь */
+    .form {
+        padding: 0 30px;
+    }
+    form {
+        width: 100%;
+        height: auto;
+        margin: 40px 0px;
+        padding: 20px 10px;
+        gap: 20px;
+        border-radius: 20px;
+    }
+    input,
+    textarea {
+        border-radius: 10px;
+        font-size: 3vw;
+        padding: 10px;
+    }
+    form button {
+        width: 40%;
+    }
+/* Контакты */
+    .map-contact {
+        position: static;
+        z-index: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column; /* Элементы внутри пойдут друг за другом*/
+        align-items: center;
+        margin: 20px 0;
+        padding: 0;
+    }
+    iframe {
+        width: 100%;
+        height: 373.5px;
+    }
+    .contact { 
+        position: static;
+        z-index: auto;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        transform: none;
+        margin: 20px 20px; /* Центрируем под картой*/
+        padding: 0px 10px;
+    } 
+    .contact h3 {
+        margin: 0 30px;
+    }
+    .contact p { /* Первый элемент <p> в контейнере */
+        font-size: 22px;
+        margin: 20px 30px;
+    }
+
+    /*FOOTER*/
+    footer {
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        gap: 10px;
+        padding: 20px 30px;
+        background-color: #9eb1f465;
+    }
+    footer>h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    footer nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    footer nav ul li {
+        font-weight: 200;
+        font-size: 25px;
+    }
+    footer p a {
+        font-weight: 300;
+        font-size: 25px;
+    }
+    footer div {
+        display: flex;
+    }
+    footer div img {
+        width: 50%;
         height: auto;
     }
 }
