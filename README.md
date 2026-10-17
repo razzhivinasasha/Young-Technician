@@ -8,7 +8,7 @@
 * **Макет в Figma:** [Ссылка на дизайн-макет](https://www.figma.com/design/AjAL5YxG0v244cMz42sCcA/Untitled?node-id=0-1&p=f&t=fYhmboyUpj8CDWUE-0)
 
 ### :camera_flash: Скриншот проекта:
-[![Превью сайта "Vintage - food"](./img/2026-10-17_14-54-46.png)](https://razzhivinasasha.github.io/Young-Technician/) 
+[![Превью сайта "Vintage - food"](./img/скрин%20сайта.png)](https://razzhivinasasha.github.io/Young-Technician/) 
 
 ## :rocket: О проекте
 
@@ -69,6 +69,16 @@
 
 ## :shield: Сложности и их решение
 
+
+<table>
+  <tr>
+    <td align="center"><b>Mobile First</b></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="./img/скрин формы.png" width="350"></td>
+  </tr>
+</table>
+
 При работе над адаптивным дизайном возникла проблема: на экранах от 480px до 931.98px форма обратной связи (`<form>`) ломала разметку и выходила за пределы области видимости экрана, создавая нежелательную горизонтальную прокрутку.
 
 **Решение:**
@@ -105,17 +115,7 @@ textarea {
     margin-bottom: 21px;
 }
 ```
-
 **Код исправления для @media():**
-
-<table>
-  <tr>
-    <td align="center"><b>Mobile First</b></td>
-  </tr>
-  <tr>
-    <td valign="top"><img src="./img/скрин формы.png" width="350"></td>
-  </tr>
-</table>
 
 ```css
 @media screen and (min-width: 480px) and (max-width: 931.98px) {
