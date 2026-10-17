@@ -18,7 +18,16 @@
 <body>
     <header>
         <h1 class="logo">Юный Техник</h1>
+
+        <!--ЛОГО ДЛЯ @media
+        Разворот буквы "Т" на 180 градусов, не по проекту-->
+        <h1 class="logo-media">Ю<span style="transform: rotate(180deg); display: inline-block; color:black">Т</span></h1>
+
         <nav>
+            <!--СКРЫТЫЙ БЛОК
+            Чекбокс для переключения меню -->
+            <input type="checkbox" id="menu-teh" class="menu-teh">
+            <label for="menu-teh" class="new-menu"></label>
             <ul>
                 <li><a href="#products">Товары</a></li>
                 <li><a href="#reviews">Отзывы</a></li>
